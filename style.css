@@ -195,11 +195,16 @@ form input[type="submit"]:hover {
   flex: 1;
   border-radius: 5px;
   text-align: center;
+  min-height: 2.8125rem;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (max-width: 48rem) {
   .container {
-    max-width: 20rem;
+    width: 100%;
   }
   form {
     flex-direction: column;
@@ -208,6 +213,10 @@ form input[type="submit"]:hover {
   form input[type="text"] {
     width: 100%;
     margin-bottom: 10px;
+    padding: 1rem;
     text-align: center;
+  }
+  .details > div {
+    padding: 0 3rem;
   }
 }
