@@ -103,3 +103,111 @@ meter {
 :where(dialog:modal) {
   all: revert;
 }
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #23272a;
+  color: #ffffff;
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: #2c2f33;
+  box-shadow: 0 0 20px rgb(0, 0, 0, 0.2);
+  text-align: center;
+  width: 37.5rem;
+  border-radius: 5px;
+  padding: 1.25rem;
+}
+
+h1 {
+  margin-block: 1rem;
+  color: #7289da;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.25rem;
+}
+
+form input[type="text"] {
+  padding: 0.625rem;
+  outline: none;
+  font-size: 1.125rem;
+  width: 60%;
+  text-align: start;
+  color: #99aab5;
+  background-color: #23272a;
+  border-radius: 5px;
+}
+
+form input[type="submit"] {
+  background-color: #7289da;
+  color: #fff;
+  border-radius: 5px;
+  padding: 0.625rem 1.25rem;
+  font-size: 1.125rem;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.4s ease;
+}
+
+form input[type="submit"]:hover {
+  background-color: #0062cc;
+}
+
+.icon img {
+  width: 6.25rem;
+  height: 6.25rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.temperature {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 1.25rem 0;
+}
+
+.description {
+  font-size: 1.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.625rem;
+}
+
+.details > div {
+  padding: 1.25rem;
+  background-color: #23272a;
+  flex: 1;
+  border-radius: 5px;
+  text-align: center;
+}
+
+@media (max-width: 48rem) {
+  .container {
+    max-width: 20rem;
+  }
+  form {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  form input[type="text"] {
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+}
