@@ -9,6 +9,25 @@
     <title>Weather App</title>
 </head>
 <body>
+    <main class="container">
+        <h1>Weather App</h1>
+        <form>
+            <input id="city-input" placeholder="Enter City" type="text">
+            <input type="submit" value="Get Weather">
+        </form>
+        <div id="weather-data">
+            <div class="icon">
+                <img src="http://openweathermap.org/img/wn/01d.png" alt="Weather Icon">
+            </div>
+            <div class="temperature">22°C</div>
+            <div class="description">Sunny</div>
+            <div class="details">
+                <div>Feels like: 22°C</div>
+                <div>Humidity: 40%</div>
+                <div>Wind speed: 5 m/s</div>
+            </div>
+        </div>
+    </main>
     <script src="script.js"></script>
 </body>
 </html>
